@@ -1,66 +1,46 @@
 <!DOCTYPE html>
 <html>
-<head><title>Codename Nemerus</title></head>    
+<head><title>xerix123456's site</title></head>    
 <link rel="stylesheet" href="lib/7.css">
 <link rel="stylesheet" href="lib/system.css">
 <body>
 
     <style>
         body {
-          background-image: url('wallpaper/wallpaper.jpg');
+          background-image: url('wallpaper/wallpaper.png');
 
         }
         </style>
 
-
-
-<div class="window active" style="max-width: align-self: start;">
+<div class="background" id="divElement">
+  <div class="window glass active" style="max-width: 320px">
     <div class="title-bar">
-      <div class="title-bar-text">Welcome!</div>
+      <div class="title-bar-text">kernel64</div>
+      <div class="title-bar-controls">
+        <button aria-label="Minimize"></button>
+        <button aria-label="Close"></button>
+      </div>
     </div>
     <div class="window-body has-space">
-      <p>Welcome to my site! Below you will find some info.</p>
+      <menu role="tablist">
+        <button role="tab" aria-controls="about" aria-selected="true">About</button>
+        <button role="tab" onclick="redirectToPage()" aria-controls="pcspecs">PC Specs</button>
+        <script>
+          function redirectToPage() {
+            window.location.href = "pcspecs.html";
+          }
+        </script>
+      </menu>
+      <p>Welcome to my site! Below you will find some not useful info about me.</p>
+      <p>Name: Unknown</p>
+      <p>Age: Unknown</p>
+      <p>Country: Belarus</p>
+      <p>Usernames: kernel64; xerix123456</p>
+      <p>About me: 0 coding skills, very stupid</p>
+      <p>ver:1.1</p>
     </div>
   </div>
-
- 
-
-  <div class="window active" style="max-width: align-self: start;">
-    <div class="title-bar">
-      <div class="title-bar-text">Wallpapers and programs</div>
-    </div>
-    <div class="window-body has-space">
-        
-        <iframe src="https://drive.google.com/embeddedfolderview?id=1giS36dzwQ2KD8ePfZpWpHrJsSf-2aDVT#grid" style="width:100%; height:250px; border:0;"></iframe>
-    </div>
-  </div>
-
-
-
-  <div class="window active" style="max-width: align-self: start;">
-    <div class="title-bar">
-      <div class="title-bar-text">Site e-mail</div>
-    </div>
-    <div class="window-body has-space">
-        
-      <p>Not implemented.</p>
-    </div>
-  </div>
-
-
-
-   <div class="window active" style="max-width: align-self: start;">
-    <div class="title-bar">
-      <div class="title-bar-text">Friends</div>
-    </div>
-    <div class="window-body has-space">
-        
-        <a href="https://wt-sys.github.io"><img src="img/WT.png" style="border-radius: 10px;" alt="WT"/></a>
-    </div>
-  </div>
-
-  
-  
+</div>
 
 </body>
 </html>
